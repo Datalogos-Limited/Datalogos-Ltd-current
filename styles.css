@@ -144,3 +144,18 @@ body,button,input,select,textarea{font-family:'Aptos','Segoe UI',Arial,sans-seri
 .core-mark{background:transparent;border-radius:0;box-shadow:none;color:var(--navy)}
 .core-symbol{width:92px;height:78px;display:grid;place-items:center}
 .core-symbol img{display:block;width:88px;height:78px;object-fit:contain}
+/* Use the standalone product marks without coloured badge fills. */
+.stack-symbol-img{width:52px;height:52px;flex:none;padding:9px;border:1px solid #cfd6dc;border-radius:50%;background:#e9edf1!important;object-fit:contain;object-position:center}
+/* Match the brand reference badges in the POC product cards. */
+.poc-products article{align-items:flex-start}
+.poc-product-icon{width:70px;height:70px;flex:none;display:grid;place-items:center;margin:0 0 12px;border:1px solid #cfd6dc;border-radius:50%;background:#e9edf1}
+.poc-product-icon img{width:44px;height:46px;margin:0;object-fit:contain;object-position:center}
+@media(max-width:780px){.poc-products article{align-items:flex-start}.poc-product-icon{width:64px;height:64px}.poc-product-icon img{width:40px;height:42px}}
+.poc-access-copy{font-size:11px;line-height:1.6;color:#536174;margin:0 0 14px}
+#poc-access-form{display:grid;gap:6px}
+#poc-access-form label{font-size:10px;font-weight:600;color:#46566a;margin-top:3px}
+#poc-access-form input{height:36px;padding:0 10px;border:1px solid rgba(16,29,50,.24);background:#fff;color:var(--navy);font-size:11px;border-radius:2px}
+#poc-access-form input:focus{outline:2px solid var(--teal);outline-offset:1px}
+#poc-access-form button{width:100%;justify-content:space-between;cursor:pointer;margin-top:8px}
+.poc-mail-note{font-size:9px;line-height:1.5;color:#778394;margin:5px 0 0}
+.poc-form-status{font-size:10px;color:var(--teal);min-height:0;margin:0}
