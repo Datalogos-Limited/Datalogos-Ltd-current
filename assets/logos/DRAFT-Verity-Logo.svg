@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="320" viewBox="0 0 600 320" role="img" aria-labelledby="title desc">
+  <title id="title">Draft Verity logo with bronze accent</title>
+  <desc id="desc">Three evidence bars and a teal checkmark, with one bronze bar, above the Verity wordmark.</desc>
+  <g shape-rendering="geometricPrecision">
+    <rect x="250" y="46" width="100" height="12" fill="#7566A8"/>
+    <rect x="250" y="72" width="48" height="12" fill="#75D5D0"/>
+    <rect x="250" y="98" width="64" height="12" fill="#B68B55"/>
+    <path d="M310 86 L330 106 L369 64" fill="none" stroke="#1E9B98" stroke-width="13" stroke-linecap="square" stroke-linejoin="miter"/>
+  </g>
+  <text x="300" y="211" text-anchor="middle" fill="#101D32" font-family="Helvetica Neue Thin, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="34" font-weight="200" letter-spacing="7">VERITY</text>
+  <text x="300" y="248" text-anchor="middle" fill="#1A2C46" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" font-weight="300" letter-spacing="4">DATA ASSURANCE</text>
+</svg>

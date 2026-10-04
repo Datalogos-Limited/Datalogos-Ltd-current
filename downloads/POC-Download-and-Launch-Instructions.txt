@@ -1,0 +1,353 @@
+DATALOGOS LOCAL PROOF OF CONCEPT
+Counterpoise | Verity | Datafolio
+Version 1.0.0 - 3 October 2026
+
+Package: FINAL-Datalogos-Local-POC-v1.0.zip
+
+QUICK START
+===========
+
+1. Extract the ZIP completely.
+2. Open the extracted datalogos-poc folder.
+3. Open Terminal or Command Prompt in that folder.
+4. Run the appropriate launch command:
+
+   Mac or Linux:  python3 app.py
+   Windows:       py -3 app.py
+
+5. Keep that terminal window open while using the POC.
+6. Open this address in your browser:
+
+   http://127.0.0.1:8765
+
+7. Choose Clean sales, click Evaluate with Counterpoise, then click
+   Execute permitted action. Open Datafolio wallets to see the result.
+
+
+1. REQUIREMENTS
+===============
+
+- Python 3.10 or later installed on your computer.
+- A modern web browser.
+- A writable local folder for the extracted files and runtime data.
+
+No pip packages, API keys, cloud accounts or paid services are needed.
+Once Python is installed and the ZIP is downloaded, the POC runs offline.
+
+Check Python before launching:
+
+   Mac or Linux:  python3 --version
+   Windows:       py -3 --version
+
+If the command is not recognised, install Python 3.10 or later and reopen
+your terminal. On Windows, enable the Python launcher during installation.
+If the launcher is unavailable but Python is installed, try:
+
+   python --version
+   python app.py
+
+
+2. EXTRACT THE ZIP
+==================
+
+Mac:
+  Double-click FINAL-Datalogos-Local-POC-v1.0.zip in Finder.
+
+Windows:
+  Right-click the ZIP, select Extract All, and open the extracted folder.
+  Do not run the application from inside the compressed ZIP view.
+
+Linux:
+  Use your file manager's Extract command, or run:
+
+   unzip FINAL-Datalogos-Local-POC-v1.0.zip
+
+The application folder is named datalogos-poc. Depending on your extraction
+tool, it may be inside another folder named after the ZIP. Open folders
+until you can see app.py alongside static, samples, datalogos and docs.
+Keep all these files and folders together.
+
+
+3. LAUNCH ON A MAC
+==================
+
+Open Terminal. Type cd followed by a space, drag the extracted datalogos-poc
+folder from Finder into Terminal, then press Return. This enters the correct
+folder without needing to type its full path.
+
+If the folder is directly inside Downloads, you can instead use:
+
+   cd "$HOME/Downloads/datalogos-poc"
+
+Then run:
+
+   python3 app.py
+
+Expected startup message:
+
+   Datalogos POC 1.0.0: http://127.0.0.1:8765
+
+Open that address in Safari, Chrome or another modern browser.
+
+An optional Start-Mac.command launcher is included. If macOS prevents
+double-click execution, use the Terminal commands above.
+
+
+4. LAUNCH ON WINDOWS
+====================
+
+Open the extracted datalogos-poc folder in File Explorer. Click its address
+bar, type cmd, and press Enter. Command Prompt opens in that folder.
+
+Run:
+
+   py -3 app.py
+
+If Python was installed without the launcher, use:
+
+   python app.py
+
+If the folder is directly inside Downloads, you can also open Command
+Prompt and enter:
+
+   cd /d "%USERPROFILE%\Downloads\datalogos-poc"
+   py -3 app.py
+
+Open this address in your browser:
+
+   http://127.0.0.1:8765
+
+Alternatively, double-click Start-Windows.bat in the application folder.
+
+
+5. LAUNCH ON LINUX
+==================
+
+Open a terminal in the extracted datalogos-poc folder and run:
+
+   python3 app.py
+
+Or use the included shell launcher:
+
+   bash start.sh
+
+Open http://127.0.0.1:8765 in your browser.
+
+
+6. FIRST DEMONSTRATION
+======================
+
+A. Successful workflow
+   Select Clean sales on Governed workflow.
+   Click Evaluate with Counterpoise.
+   Inspect the Governance, Privacy, Ethics and Security outcomes.
+   Click Execute permitted action.
+   View regional totals and open Datafolio wallets.
+   Export the evidence JSON, then verify it in the Datafolio view.
+
+B. Verity data-quality checks
+   Load Poor quality and evaluate it.
+   Counterpoise should return BLOCK.
+   Open Verity assurance to inspect the row-level findings.
+
+C. Privacy and security controls
+   Load Missing consent and evaluate for External sharing.
+   The Privacy engine should block the request.
+   Load Suspicious instructions and evaluate.
+   The Security engine should block the request.
+   Restricted data should also be blocked for external sharing.
+
+D. Human review
+   Load Human review and evaluate it.
+   Open Counterpoise controls.
+   Change the top-right demo persona to Human reviewer.
+   Enter a review rationale and click Approve.
+   Switch back to Analyst and execute the approved request.
+   A hard-blocked request cannot be approved.
+
+E. Datafolio sharing and revocation
+   Load External sharing, evaluate it, and execute.
+   Open its Datafolio wallet and create a scoped sharing grant.
+   Choose fields, enter a demonstration recipient and set the expiry.
+   Export the scoped bundle and verify it: live permission should be Active.
+   Revoke the grant and verify the same JSON again.
+   Integrity remains valid, while live permission becomes Inactive.
+   Change a total in the verification JSON to demonstrate tamper detection.
+   No email is sent to the recipient.
+
+F. Evidence trail
+   Open Evidence trail and click Recheck.
+   Inspect the inspection, decision, execution, wallet and revocation events.
+
+Start with the Analyst persona for importing, evaluating and executing.
+Use Human reviewer for review decisions and Policy steward for policy edits.
+These are selectable demonstration roles, not authenticated user identities.
+
+
+7. STOP AND RESTART
+===================
+
+To stop, return to the terminal running the server and press Ctrl+C.
+Closing the browser tab does not stop the server.
+
+To restart, reopen a terminal in datalogos-poc and run the same launch command.
+Your local data, decisions and wallets are retained between restarts.
+
+
+8. IF PORT 8765 IS ALREADY IN USE
+===============================
+
+Use a different port:
+
+   Mac or Linux:  python3 app.py --port 8766
+   Windows:       py -3 app.py --port 8766
+
+Then open:
+
+   http://127.0.0.1:8766
+
+The browser address must match the port used in the launch command.
+
+
+9. IMPORT YOUR OWN CSV
+======================
+
+Expand Import your own CSV in Governed workflow.
+Choose a UTF-8 CSV file and complete its name, source, owner, permitted
+purpose and classification. Click Import and inspect, then evaluate it.
+
+Required column headings:
+
+   record_id,region,amount,consent
+
+Optional columns include email and notes. For example:
+
+   record_id,region,amount,consent,email,notes
+   R001,North,125.50,true,person@example.test,Synthetic example
+
+Rules:
+  - record_id must be present and unique.
+  - region must be North, South, East or West (case-sensitive).
+  - amount must be between 0 and 1,000,000,000, with at most two decimal places.
+  - consent must be true or false.
+  - Maximum CSV size: 1 MB; maximum rows: 5,000.
+
+Use synthetic data for your first demonstrations. The report exports
+regional totals and counts, excluding raw personal fields.
+
+
+10. LOCAL DATA, BACKUP AND A FRESH DEMO
+=====================================
+
+The application creates a runtime folder on first launch:
+
+   runtime/poc.sqlite3   Local datasets, decisions, wallets and audit events
+   runtime/issuer.key    Private signing key for this installation
+
+For a backup, stop the POC with Ctrl+C and copy the whole runtime folder.
+Keep the database and key together. Do not share issuer.key.
+
+For a fresh demonstration, stop the POC and rename runtime to a backup name,
+for example runtime-backup-2026-10-03. Relaunch the POC. A new runtime folder
+and signing key will be generated. Previously exported evidence will not
+authenticate against the new installation's key.
+
+To choose another local data location, use a quoted path:
+
+   Mac or Linux:
+   python3 app.py --data-dir "/full/path/to/poc-data"
+
+   Windows:
+   py -3 app.py --data-dir "C:\full\path\to\poc-data"
+
+Replace these example paths with a real writable folder on your computer.
+
+
+11. OPTIONAL DEVELOPER COMMANDS
+==============================
+
+Run the built-in backend and HTTP tests from datalogos-poc:
+
+   Mac or Linux:  python3 -m unittest discover -s tests -v
+   Windows:       py -3 -m unittest discover -s tests -v
+
+Expected result: 28 tests pass.
+
+Check an exported JSON bundle offline:
+
+   python3 verify_bundle.py "/path/to/exported-bundle.json"
+
+Also check the local issuer on the originating installation:
+
+   python3 verify_bundle.py "/path/to/exported-bundle.json" --issuer-key runtime/issuer.key
+
+On Windows, replace python3 with py -3 and use the actual Windows file path.
+Offline digest verification cannot check current revocation or permission.
+Use the front-end verification panel for current local permission status.
+
+
+12. TROUBLESHOOTING
+===================
+
+"Cannot open app.py" or "No such file":
+  You are in the wrong folder. Enter the extracted datalogos-poc folder
+  containing app.py, then retry.
+
+"Python is not recognised" or "command not found":
+  Check that Python 3.10 or later is installed and reopen the terminal.
+  On Windows, try py -3 or python; on Mac/Linux, try python3.
+
+Browser says the site cannot be reached:
+  Confirm the terminal still shows the running server and no startup error.
+  Use http://127.0.0.1:8765, or the port you selected.
+  Use http, not https. Do not open static/index.html directly.
+
+Session or request-token error:
+  Refresh the browser page to initialise a new local session, then retry.
+
+Cannot approve or execute:
+  Check the selected demo persona and the request state.
+  Hard blocks cannot be approved. Pending reviews need a reviewer rationale.
+  Executed requests cannot be executed again.
+
+Stale policy authority:
+  A policy change invalidates earlier execution/sharing authority.
+  Evaluate a new request against the current policy.
+
+Issuer verification fails for an unchanged file:
+  Check that the bundle came from this installation and that its original
+  runtime/issuer.key is still present. Different installations use different
+  keys. Changing exported records also invalidates their proof.
+
+
+13. WHAT THIS POC DEMONSTRATES
+=============================
+
+Counterpoise: deterministic policy decisions, review and execution controls.
+Verity: data-quality checks, declared provenance and integrity fingerprints.
+Datafolio: portable evidence, selected-field grants, expiry and revocation.
+
+The executed action is a local regional sales aggregation, not an LLM call.
+Consent and provenance are declared inputs, and detection uses limited
+heuristics. Local signatures establish consistency with the installation,
+not source truth or independent certification. Revocation prevents future
+access through the POC; it cannot recall already exported copies.
+
+The POC binds to your local computer only. It is not a production service.
+Local records are stored without encryption at rest.
+
+Validation completed: 28 backend/HTTP tests and front-end event tests.
+Visual browser testing could not be completed in the build environment.
+Mac and Windows launchers were included but were not tested natively.
+
+
+14. ADDITIONAL DOCUMENTATION INSIDE THE ZIP
+=========================================
+
+   README.md                  Detailed project overview
+   docs/DEMO-WALKTHROUGH.md    Demonstration script
+   docs/ARCHITECTURE.md        Component design and state model
+   docs/API.md                 Local API routes and examples
+   docs/VALIDATION.md          Test coverage and validation limits
+
+Copyright (c) 2026 Datalogos Limited. All rights reserved.

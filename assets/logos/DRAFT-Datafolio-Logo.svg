@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="320" viewBox="0 0 600 320" role="img" aria-labelledby="title desc">
+  <title id="title">Draft Datafolio logo</title>
+  <desc id="desc">A compact, rectilinear folio formed from paired record panels around an ink spine, with teal, cyan and bronze detail, above the Datafolio wordmark.</desc>
+  <!-- Paired record pages and a continuous spine, drawn with the same disciplined bars as the family. -->
+  <rect x="257" y="54" width="10" height="84" fill="#101D32"/>
+  <rect x="333" y="54" width="10" height="84" fill="#101D32"/>
+  <rect x="292" y="38" width="16" height="116" fill="#1E9B98"/>
+  <rect x="275" y="67" width="10" height="7" fill="#1E9B98"/>
+  <rect x="275" y="91" width="10" height="7" fill="#75D5D0"/>
+  <rect x="315" y="67" width="10" height="7" fill="#75D5D0"/>
+  <rect x="315" y="91" width="10" height="7" fill="#1E9B98"/>
+  <rect x="275" y="116" width="10" height="7" fill="#B68B55"/>
+  <text x="300" y="211" text-anchor="middle" fill="#101D32" font-family="Helvetica Neue Thin, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="34" font-weight="200" letter-spacing="7">DATAFOLIO</text>
+  <text x="300" y="248" text-anchor="middle" fill="#1A2C46" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" font-weight="300" letter-spacing="4">YOUR DATA. YOUR CONTROL.</text>
+</svg>

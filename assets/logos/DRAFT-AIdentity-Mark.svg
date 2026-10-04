@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="100" viewBox="0 0 120 100" role="img" aria-labelledby="title desc">
+  <title id="title">AIdentity brand mark</title>
+  <desc id="desc">A teal vertical bar balanced by navy horizontal bars, from the September 2026 AIdentity identity concept.</desc>
+  <g shape-rendering="geometricPrecision">
+    <rect x="53" y="10" width="12" height="80" fill="#1E9B98"/>
+    <rect x="30" y="27" width="17" height="8" fill="#1E9B98"/>
+    <rect x="71" y="27" width="29" height="8" fill="#101D32"/>
+    <rect x="71" y="62" width="22" height="8" fill="#101D32"/>
+  </g>
+</svg>
