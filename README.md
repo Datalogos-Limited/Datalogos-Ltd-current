@@ -16,8 +16,7 @@ Then visit `http://localhost:8000`.
 
 - `index.html` — site structure and customer-specific copy
 - `styles.css` — responsive design system, portraits and embedded demo layout
-- `app.js` and `data/blog-index.json` — responsive navigation, searchable 63-post blog archive and POC/whitepaper access request forms
-- Whitepaper requests open a pre-addressed email to Advisory@datalogos.co.uk with the subject “Whitepaper Access”; the visitor must send it from their email app. Whitepaper files remain access controlled and are not distributed automatically.
+- `app.js` and `data/blog-index.json` — responsive navigation and searchable, filterable 63-post blog archive linked to original articles and Drive archive copies
 - `assets/john-hauxwell-portrait.png` — supplied portrait, displayed head and shoulders in a circular crop
 - `assets/darren-placeholder.svg` — brand-colour portrait placeholder for Darren White
 - `demo/FINAL-Counterpoise-Standalone-Demo/` — self-contained Counterpoise v1.4 demo, embedded on the site and separately launchable

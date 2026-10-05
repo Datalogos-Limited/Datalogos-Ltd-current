@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="240" viewBox="0 0 100 100">
+<title>Hyphvera product mark</title><desc>Federated data strands woven through a shared H-shaped structure.</desc>
+<g fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M22 18 V82" stroke="#101D32" stroke-width="9"/>
+  <path d="M78 18 V82" stroke="#101D32" stroke-width="9"/>
+  <path d="M22 50 C35 50 37 30 50 30 C63 30 65 50 78 50" stroke="#1E9B98" stroke-width="8"/>
+  <path d="M22 50 C35 50 37 70 50 70 C63 70 65 50 78 50" stroke="#B68B55" stroke-width="8"/>
+  <circle cx="50" cy="50" r="4.6" fill="#101D32" stroke="none"/>
+</g></svg>
