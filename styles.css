@@ -159,3 +159,12 @@ body,button,input,select,textarea{font-family:'Aptos','Segoe UI',Arial,sans-seri
 #poc-access-form button{width:100%;justify-content:space-between;cursor:pointer;margin-top:8px}
 .poc-mail-note{font-size:9px;line-height:1.5;color:#778394;margin:5px 0 0}
 .poc-form-status{font-size:10px;color:var(--teal);min-height:0;margin:0}
+/* Whitepaper request form: keep each label and field on its own aligned row. */
+#whitepaper-access-form{display:grid;grid-template-columns:minmax(0,1fr);gap:6px;width:100%;min-width:0}
+#whitepaper-access-form label{display:block;font-size:10px;font-weight:600;line-height:1.35;color:#46566a;margin-top:3px}
+#whitepaper-access-form input{display:block;box-sizing:border-box;width:100%;min-width:0;height:36px;padding:0 10px;border:1px solid rgba(16,29,50,.24);background:#fff;color:var(--navy);font-size:11px;border-radius:2px}
+#whitepaper-access-form input:focus{outline:2px solid var(--teal);outline-offset:1px}
+#whitepaper-access-form button{display:flex;width:100%;justify-content:space-between;cursor:pointer;margin-top:8px}
+.whitepaper-section .poc-access{min-width:0;align-self:start}
+.whitepaper-section .poc-access-copy{line-height:1.55;margin-bottom:12px}
+.whitepaper-section .poc-mail-note{overflow-wrap:anywhere}
