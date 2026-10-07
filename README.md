@@ -16,10 +16,11 @@ Then visit `http://localhost:8000`.
 
 - `index.html` — site structure and customer-specific copy
 - `styles.css` — responsive design system, portraits and embedded demo layout
-- `app.js` and `data/blog-index.json` — responsive navigation and searchable, filterable 63-post blog archive linked to original articles and Drive archive copies
+- `app.js`, `data/blog-index.json` and `data/whitepapers-index.json` — responsive navigation, searchable blog archive and a searchable whitepapers catalogue with title-only listings and full-library access requests
 - `assets/john-hauxwell-portrait.png` — supplied portrait, displayed head and shoulders in a circular crop
 - `assets/darren-placeholder.svg` — brand-colour portrait placeholder for Darren White
 - `assets/andreas-behrens.jpg` — supplied portrait for Andreas Behrens, Regulatory Advisor
+- `assets/sarah-aird-mash.png` — supplied portrait for Sarah Aird-Mash, Marketing Advisor
 - `demo/FINAL-Counterpoise-Standalone-Demo/` — self-contained Counterpoise v1.4 demo, embedded on the site and separately launchable
 
 ## Google Drive references
@@ -29,6 +30,8 @@ Blog archive index: https://docs.google.com/document/d/1p-uIw8ZQVttJ6Evd7VuG0TJl
 Technical documents index: https://docs.google.com/document/d/1QJjTlZvZjDKJ0JAoh3jsEOeL9oy8rQ07g_KdVnqAMYI/edit?usp=drivesdk
 
 The blog archive contains 63 entries from the Google Drive blog index, with search, topic filters, publication dates, links to the original AIdentity posts and corresponding Drive copies. The technical section links to selected master architecture, orchestrator, MCP-native, UML, Verity and Datafolio materials. The full technical index contains the broader catalogue and associated Drive folders.
+
+The Whitepapers section displays titles from the Google Drive folder `19 Datalogos AIdentity whitepapers`. It does not publish document links. Visitors can browse 15 titles at a time and request access to the full library by email.
 
 ## Product status
 
