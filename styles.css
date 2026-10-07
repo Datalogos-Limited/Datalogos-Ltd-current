@@ -163,3 +163,6 @@ body,button,input,select,textarea{font-family:'Aptos','Segoe UI',Arial,sans-seri
 /* Hyphvera extends the product ecosystem as a fourth, federated data capability. */
 .hyphvera-detail{border-top-color:var(--teal)}.detail-icon.hyphvera{background:#e7f4f1}.detail-icon img{width:25px;height:25px;object-fit:contain}.stack-symbol-img[src*="Hyphvera"]{padding:2px}.products-card .product-stack{display:flex;flex-direction:column;gap:5px}.products-card .stack-row{min-height:54px}
 @media(max-width:680px){.product-detail-grid{grid-template-columns:1fr}}
+
+/* Regulatory advisor profile */
+.team-grid{grid-template-columns:repeat(4,minmax(0,1fr))}.photo-andreas{border-color:var(--purple);box-shadow:0 0 0 3px #7566a822}@media(max-width:980px){.team-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:560px){.team-grid{grid-template-columns:1fr}}

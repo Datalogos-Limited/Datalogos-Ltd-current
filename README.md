@@ -19,6 +19,7 @@ Then visit `http://localhost:8000`.
 - `app.js` and `data/blog-index.json` — responsive navigation and searchable, filterable 63-post blog archive linked to original articles and Drive archive copies
 - `assets/john-hauxwell-portrait.png` — supplied portrait, displayed head and shoulders in a circular crop
 - `assets/darren-placeholder.svg` — brand-colour portrait placeholder for Darren White
+- `assets/andreas-behrens.jpg` — supplied portrait for Andreas Behrens, Regulatory Advisor
 - `demo/FINAL-Counterpoise-Standalone-Demo/` — self-contained Counterpoise v1.4 demo, embedded on the site and separately launchable
 
 ## Google Drive references
@@ -35,7 +36,7 @@ The embedded demonstration is illustrative and runs locally in the browser. It d
 
 ## Before public launch
 
-- Confirm approved public contact and leadership details.
+- Confirm approved public contact, leadership and advisor details.
 - Replace Darren's placeholder with an approved headshot when available.
 - Confirm Drive links are intended for the target audience and have suitable sharing permissions.
 - Add privacy, cookie and accessibility statements as required for final hosting.
