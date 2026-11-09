@@ -16,19 +16,15 @@ a:focus-visible,button:focus-visible{outline:3px solid #62518d;outline-offset:4p
 
 .advisory-case-study {
   margin-top: 24px;
-  padding: clamp(24px, 4vw, 52px);
+  padding: clamp(20px, 3vw, 32px) clamp(24px, 4vw, 52px);
   border-left: 8px solid var(--teal);
   background: #eef9f8;
 }
 .advisory-case-study h3 {
   margin: 12px 0 20px;
-  font-size: clamp(26px, 3vw, 42px);
-  line-height: 1.12;
 }
 .advisory-case-study > p:not(.eyebrow) {
-  max-width: 74ch;
   margin: 0 0 14px;
-  line-height: 1.65;
 }
 .advisory-case-study > p:last-child {
   margin-bottom: 0;
