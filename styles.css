@@ -198,3 +198,99 @@ body,button,input,select,textarea{font-family:'Aptos','Segoe UI',Arial,sans-seri
 @media(max-width:680px){.whitepaper-section{padding:16px;margin-bottom:36px}.whitepaper-heading{display:block}.whitepaper-count-label{display:inline-block;margin-top:13px}.whitepaper-layout{grid-template-columns:1fr}.whitepaper-access{position:static;grid-row:1}.whitepaper-grid{grid-template-columns:1fr}.whitepaper-card{min-height:130px}}
 @media(max-width:1120px){.site-header{gap:12px}.menu-toggle{display:flex;flex-direction:column;gap:5px;border:0;background:transparent;padding:9px;cursor:pointer}.menu-toggle span{width:22px;height:1px;background:var(--navy)}#primary-nav{display:none;position:absolute;top:79px;left:0;right:0;background:#fff;padding:14px 5.5% 20px;box-shadow:0 10px 18px #101d3216;align-items:stretch;gap:0;flex-direction:column}#primary-nav.open{display:flex}#primary-nav a{padding:11px 0;border-bottom:1px solid var(--line)}#primary-nav .nav-cta{margin-top:10px;text-align:center;border:1px solid #bac3cb}}
 @media(max-width:680px){#primary-nav{top:67px;padding:18px 5% 22px}}
+
+/* SME workflow and booking section */
+.sme-section {
+  padding-block: clamp(46px, 7vw, 92px);
+}
+.sme-section,
+.sme-example,
+.sme-first-use-case {
+  scroll-margin-top: 100px;
+}
+.sme-section .section-heading {
+  margin-bottom: 22px;
+  max-width: 780px;
+}
+.sme-section .section-intro,
+.sme-example > p,
+.sme-first-use-case > p {
+  max-width: 72ch;
+  color: #536174;
+  line-height: 1.7;
+}
+.sme-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 24px;
+  margin-bottom: 28px;
+}
+.sme-example,
+.sme-first-use-case {
+  padding: clamp(20px, 4vw, 38px);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+.sme-example {
+  background: var(--white);
+}
+.sme-example h3,
+.sme-first-use-case h3 {
+  margin: 0 0 12px;
+  color: var(--navy);
+  font-size: clamp(23px, 3vw, 34px);
+  font-weight: 500;
+  letter-spacing: -.035em;
+  line-height: 1.15;
+}
+.sme-steps {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin: 23px 0 0;
+  padding: 0;
+  list-style: none;
+}
+.sme-steps li {
+  padding: 17px 19px;
+  border-radius: 6px;
+  border-left: 2px solid var(--teal);
+  background: var(--ivory);
+}
+.sme-steps h4 {
+  margin: 0 0 6px;
+  color: var(--navy);
+  font-size: 16px;
+}
+.sme-steps p {
+  margin: 0;
+  color: #536174;
+  line-height: 1.6;
+}
+.sme-first-use-case {
+  margin-top: 14px;
+  background: #eef4f1;
+}
+.sme-first-use-case .button {
+  margin-top: 12px;
+}
+@media (max-width: 680px) {
+  .sme-steps {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 1121px) {
+  #primary-nav {
+    gap: clamp(12px, 1.7vw, 28px);
+  }
+  #primary-nav a {
+    white-space: nowrap;
+  }
+}
+@media (max-width: 1120px) {
+  #primary-nav {
+    max-height: calc(100dvh - 80px);
+    overflow-y: auto;
+  }
+}
